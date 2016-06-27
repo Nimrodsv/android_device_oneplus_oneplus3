@@ -31,15 +31,17 @@ PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_RELEASE_NAME := OnePlus 3
 PRODUCT_MODEL := oneplus3
+TARGET_VENDOR_PRODUCT_NAME := OnePlus3
+TARGET_VENDOR_DEVICE_NAME := OnePlus3
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=OnePlus3 
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
-
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=OnePlus/OnePlus3/OnePlus3:6.0.1/MMB29M/213690:user/release-keys \
-    PRIVATE_BUILD_DESC="OnePlus3-user 6.0.1 MMB29M 4 dev-keys"
+    PRIVATE_BUILD_DESC="OnePlus3-user 6.0.1 MMB29M 42 dev-keys"
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += ro.product.model
