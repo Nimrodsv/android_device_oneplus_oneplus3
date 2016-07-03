@@ -37,9 +37,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=OnePlus3
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=OnePlus/OnePlus3/OnePlus3:6.0.1/MMB29M/288280:user/release-keys \
     PRIVATE_BUILD_DESC="OnePlus3-user 6.0.1 MMB29M 31 dev-keys"
